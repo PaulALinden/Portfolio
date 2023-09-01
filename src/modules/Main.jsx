@@ -38,7 +38,7 @@ export default function Main() {
 
             </article>
 
-            <div id="profil" className=" w-48 order-1 lg: w-96 relative rounded-full order-2">
+            <div id="profil" className=" w-48 min-w-fit order-1 lg: w-96 relative rounded-full order-2">
 
                 <img src={profil4} alt="BILD" />
 

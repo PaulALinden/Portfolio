@@ -10,7 +10,7 @@ function App() {
     //const [status, setStatus] = useState('');
 
     return (
-        <div className="dark:bg-gray-700 h-fit min-h-screen  w-screen min-w-fit font-serif">
+        <div className="dark:bg-gray-700 h-fit min-h-screen w-screen min-w-fit font-serif">
 
             <Header/>
             
