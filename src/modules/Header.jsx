@@ -8,7 +8,7 @@ export default function Header() {
         setStatus('');
     }*/
     return (
-        <div className="bg-gradient-to-r from-gray-800 to-gray-500 flex justify-between flex-wrap text-white pb-2 h-26 min-[464px]:h-16">
+        <div className="bg-gradient-to-r from-gray-800 to-gray-500 flex justify-between flex-wrap text-white pb-2 h-26 min-[520px]:h-16">
             
             <header id="header" className=" h-12">
 

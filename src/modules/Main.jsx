@@ -38,7 +38,7 @@ export default function Main() {
 
             </article>
 
-            <div id="profil" className=" w-48 max-w-fit order-1 lg: w-96 relative rounded-full order-2">
+            <div id="profil" className="text-white bg-gray-700 dark:bg-gray-700 w-48 max-w-fit order-1 lg: w-96 relative rounded-t-full order-2">
 
                 <img src={profil4} alt="BILD"/>
 
@@ -52,7 +52,7 @@ export default function Main() {
 
             </div>
 
-            <footer id="socialmedia" className="order-3 flex space-x-2 bg-[#374151] w-24 border-2 border-white lg:fixed bottom-6 right-6 p-4">
+            <footer id="socialmedia" className="text-white order-3 flex space-x-2 bg-[#374151] w-24 border-2 border-white lg:fixed bottom-6 right-6 p-4">
 
                 <a href="https://linkedin.com/in/paul-lindén-433457257"><SiLinkedin className="text-2xl" /></a>
                 <a href="https://github.com/PaulALinden?tab=repositories"><SiGithub className="text-2xl" /></a>
