@@ -38,9 +38,9 @@ export default function Main() {
 
             </article>
 
-            <div id="profil" className=" w-48 min-w-fit order-1 lg: w-96 relative rounded-full order-2">
+            <div id="profil" className=" w-48 max-w-fit order-1 lg: w-96 relative rounded-full order-2">
 
-                <img src={profil4} alt="BILD" />
+                <img src={profil4} alt="BILD"/>
 
 
                 <a href={url} target="_blank" className="bg-[#374151] border-2 border-white rounded-l-lg p-2 absolute bottom-0 left-0 flex justify-center items-center space-x-1 h-12 w-16 text-center">
