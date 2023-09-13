@@ -11,7 +11,7 @@ export default function App() {
     return (
         <div className="dark:bg-gray-700 h-fit min-h-screen w-screen min-w-fit font-serif">
 
-            <BrowserRouter>
+            <BrowserRouter basename="/portfoliopage">
 
                 <Routes>
 
