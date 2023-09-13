@@ -1,24 +1,42 @@
-import { createRoot } from 'react-dom/client';
-
-import './index.css';
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import Header from './modules/Header';
-import Main from './modules/Homepage';
+import Homepage from './modules/homepage/Homepage';
+import PortfolioPage from './modules/portfolioPage/PortfolioPage';
+import ContactPage from './modules/contactPage/ContactPage';
+import NoPage from "./modules/NoPage";
 
-function App() {
-
-    //const [status, setStatus] = useState('');
+export default function App() {
 
     return (
         <div className="dark:bg-gray-700 h-fit min-h-screen w-screen min-w-fit font-serif">
 
-            <Header/>
-            
-            <Main/>
-            
+            <BrowserRouter>
+
+                <Routes>
+
+                    <Route
+                        path="/"
+                        element={
+                            <>
+                                <Header />
+                                <Outlet />
+                            </>
+                        } >
+
+                        <Route index path="" element={<Homepage />} />
+
+                        <Route path="portfolio" element={<PortfolioPage />} />
+
+                        <Route path="contact" element={<ContactPage />} />
+
+                        <Route path="*" element={<NoPage />} />
+
+                    </Route >
+
+                </Routes>
+
+            </BrowserRouter>
         </div>
     );
 }
-
-const root = createRoot(document.querySelector("#root"));
-root.render(<App />);
