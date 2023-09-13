@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client';
 import './index.css';
 
 import Header from './modules/Header';
-import Main from './modules/Main';
+import Main from './modules/Homepage';
 
 function App() {
 
