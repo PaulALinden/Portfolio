@@ -1,0 +1,32 @@
+{
+    "portfolio": {
+        "swosh": {
+            "title": "Swosh",
+            "description": {
+                "swe": "Här har jag skapat ett betalsystem som möjliggör dynamisk hantering av användare, transaktioner och flerfaldiga konton med varierande belopp. Konton har möjlighet till detaljerad transaktionshistorik. Endast användare med Swosh-konton kan interagera med systemet. Projektet implementerades i Java och använde en MySQL-databas för datalagring.",
+                "eng": "Here I have created a payment system that enables dynamic management of users, transactions, and multiple accounts with varying amounts. Accounts have the capability for detailed transaction history. Only users with Swosh accounts can interact with the system. The project was implemented in Java and utilized a MySQL database for data storage."
+            }
+        },
+        "react-shop": {
+            "title": "React shop",
+            "description": {
+                "swe": "En React-baserad one page webbshop med en integrerad HTML-fil. Applikationen har en meny med valen \"Produkter\" och \"Kundvagn\". Användaren kan bläddra bland produkter, lägga till dem i kundvagnen och slutföra köp. Produktsidan hämtar data från Firebase och visar namn, bild, pris och lagersaldo. Kundvagnssidan visar antal produkter och totalpris, och låter användaren tömma kundvagnen.",
+                "eng": "A React-based one-page webshop with an integrated HTML file. The application has a menu with the options \"Products\" and \"Shopping Cart\". The user can browse products, add them to the shopping cart, and complete the purchase. The product page retrieves data from Firebase and displays the name, image, price, and stock balance. The shopping cart page shows the number of products and the total price, and allows the user to empty the cart."
+            }
+        },
+        "rest-service": {
+            "title": "Rest service",
+            "description": {
+                "swe": "I detta projekt utvecklade jag en dynamisk RESTful Web Service där jag valde att lösa uppgiften med Spring Boot-ramverket. Tjänsten är utformad för att hantera inkommande requests via POST, GET, PUT och DELETE-metoderna. Jag implementerade även enhetstester för att säkerställa korrekt funktionalitet.",
+                "eng": "In this project, I developed a dynamic RESTful Web Service, choosing to solve the task using the Spring Boot framework. The service is designed to handle incoming requests via the POST, GET, PUT, and DELETE methods. Additionally, I implemented unit tests to ensure proper functionality."
+            }
+        },
+        "search-js": {
+            "title": "Flickr photo gallery",
+            "description": {
+                "swe": "En webbsida där användare kan söka efter foton från Flickr. Genom ett sökformulär kan de ange söktext, antal foton och storlek. Resultaten presenteras anpassade efter användarens val. Sidan innehåller felhantering som säkerställer en smidig upplevelse. Avancerade alternativ inkluderar sortering och förstoring av bilder i en ny flik.",
+                "eng": "A website where users can search for photos from Flickr. Through a search form, they can input search text, number of photos, and size. The results are displayed according to the user's selections. The page includes error handling to ensure a smooth experience. Advanced options include sorting and enlarging images in a new tab."
+            }
+        }
+    }
+}
