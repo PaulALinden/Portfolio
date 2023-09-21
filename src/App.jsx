@@ -6,6 +6,7 @@ import { Outlet } from "react-router-dom";
 import Header from './modules/small-assets/Header';
 import Homepage from './modules/core-components/Homepage';
 import PortfolioPage from './modules/core-components/PortfolioPage';
+import Project from './modules/portfolio-components/Project';
 import ContactPage from './modules/core-components/ContactPage';
 import NoPage from "./modules/small-assets/NoPage";
 
@@ -18,7 +19,7 @@ export default function App() {
     }
 
     return (
-        <div className="dark:bg-gray-700 h-fit min-h-screen w-screen min-w-fit font-serif">
+        <div className="bg-slate-200 dark:bg-gray-700 dark:text-white h-fit min-h-screen w-screen min-w-fit font-serif">
 
             <BrowserRouter basename="/portfoliopage" >
 
@@ -33,13 +34,15 @@ export default function App() {
                             </>
                         } >
 
-                        <Route index element={<Homepage language={language} handleLanguageChange={handleLanguageChange}/>} />
+                        <Route index element={<Homepage language={language} handleLanguageChange={handleLanguageChange} />} />
 
                         <Route path="portfolio" element={<PortfolioPage language={language} />} />
 
-                        <Route path="contact" element={<ContactPage language={language}/>} />
+                        <Route path="portfolio/:projectId" element={<Project />} />
 
-                        <Route path="*" element={<NoPage language={language}/>} />
+                        <Route path="contact" element={<ContactPage language={language} />} />
+
+                        <Route path="*" element={<NoPage language={language} />} />
 
                     </Route >
 

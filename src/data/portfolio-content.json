@@ -28,5 +28,9 @@
                 "eng": "A website where users can search for photos from Flickr. Through a search form, they can input search text, number of photos, and size. The results are displayed according to the user's selections. The page includes error handling to ensure a smooth experience. Advanced options include sorting and enlarging images in a new tab."
             }
         }
+    },
+    "heading":{
+        "swe":"Mina projekt",
+        "eng":"My Projects"
     }
 }

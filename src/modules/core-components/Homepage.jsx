@@ -8,7 +8,7 @@ export default function Main({language, handleLanguageChange}) {
   
 
     return (
-        <main id="main" className=" dark:bg-gray-700 dark:text-white p-4 flex flex-col lg:flex-row space-y-6 space-x-6">
+        <main id="main" className="p-4 flex flex-col lg:flex-row space-y-6 space-x-6">
 
             <LanguageSelector handleLanguageChange={handleLanguageChange} />
 
