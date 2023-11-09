@@ -1,5 +1,26 @@
 {
     "portfolio": {
+        "prodcons": {
+            "title": "Produce Consumer",
+            "description": {
+                "swe": "Ett Java-program som implementerar ett \"Producer-Consumer\" mönster med trådar. Det använder sig av Singleton och Single Responsibility-principen för att säkerställa effektiv resurshantering och underhållbarhet. Dessutom följer det MVC-arkitekturen för att separera datahantering, användargränssnitt och logik.",
+                "eng": "A Java program that implements a \"Producer-Consumer\" pattern using threads. It uses Singleton and Single Responsibility principles to ensure efficient resource management and maintainability. Additionally, it adheres to the MVC architecture, separating data handling, user interface, and logic concerns."
+            }
+        },
+        "minmax": {
+            "title": "Min Max",
+            "description": {
+                "swe": "Här har jag utvecklat ett luffarschack-spel där jag implementerat en minmax-algoritm för att säkerställa att datorn alltid gör det mest strategiskt fördelaktiga draget. Spelaren får kontinuerligt tips om optimala drag.",
+                "eng": "Here I have developed a tic-tac-toe game, I've integrated a min-max algorithm to ensure the computer consistently makes strategically advantageous moves. The player is provided with ongoing suggestions for optimal moves."
+            }
+        },
+        "state-machine": {
+            "title": "State machine",
+            "description": {
+                "swe": "Här har jag utvecklat en klocka med förmåga att visa och ändra både tid och datum. Applikationen är strukturerad som en state machine, vilket kräver korrekt status för att nå vissa funktioner. Detta säkerställer en smidig och pålitlig användarupplevelse.",
+                "eng": "Here I have created a clock with the capability to display and adjust both time and date. The application is structured as a state machine, requiring the correct state to access specific features. This ensures a smooth and reliable user experience."
+            }
+        },
         "swosh": {
             "title": "Swosh",
             "description": {
