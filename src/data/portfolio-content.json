@@ -1,7 +1,7 @@
 {
     "portfolio": {
         "prodcons": {
-            "title": "Produce Consumer",
+            "title": "Producer Consumer",
             "description": {
                 "swe": "Ett Java-program som implementerar ett \"Producer-Consumer\" mönster med trådar. Det använder sig av Singleton och Single Responsibility-principen för att säkerställa effektiv resurshantering och underhållbarhet. Dessutom följer det MVC-arkitekturen för att separera datahantering, användargränssnitt och logik.",
                 "eng": "A Java program that implements a \"Producer-Consumer\" pattern using threads. It uses Singleton and Single Responsibility principles to ensure efficient resource management and maintainability. Additionally, it adheres to the MVC architecture, separating data handling, user interface, and logic concerns."
