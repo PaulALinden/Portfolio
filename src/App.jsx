@@ -13,7 +13,6 @@ import NoPage from "./modules/small-assets/NoPage";
 export default function App() {
 
     const [language, setLanguage] = useState('swe');
-
     const handleLanguageChange = (selectedLanguage) => {
         setLanguage(selectedLanguage);
     }
@@ -22,9 +21,7 @@ export default function App() {
         <div className="bg-slate-200 dark:bg-gray-700 dark:text-white overflow-auto h-screen w-screen min-w-fit font-serif">
 
             <BrowserRouter basename="/portfoliopage" >
-
                 <Routes>
-
                     <Route
                         path="/"
                         element={
@@ -45,9 +42,7 @@ export default function App() {
                         <Route path="*" element={<NoPage language={language} />} />
 
                     </Route >
-
                 </Routes>
-
             </BrowserRouter>
         </div>
     );
