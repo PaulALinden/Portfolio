@@ -20,7 +20,7 @@ export default function App() {
     return (
         <div className="bg-slate-200 dark:bg-gray-700 dark:text-white overflow-auto h-screen w-screen min-w-fit font-serif">
 
-            <BrowserRouter basename="/portfoliopage" >
+            <BrowserRouter basename="/" >
                 <Routes>
                     <Route
                         path="/"
