@@ -16,11 +16,17 @@ export default function ProjectCard({ id, title, description, images }) {
             <h3 className="text-2xl">{title}</h3>
 
             <Link state={{ project: project }} to={{pathname:`/portfolio/${id}/`}}>
-                <img src={images[0]} alt="image" className="" />
+                <img
+                    src={images[0]}
+                     alt="image"
+                     fetchPriority={"high"}
+                     decoding={"sync"}
+                     className="my-4 rounded-lg hover:scale-105 transition-transform duration-300"
+                />
             </Link>
 
 
-            <p className="text-base/7">{description}</p>
+            <p className="text-base/7 text-left">{description}</p>
 
         </section>
     );

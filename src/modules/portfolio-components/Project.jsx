@@ -1,49 +1,68 @@
 import {useLocation} from 'react-router-dom';
-
+import React,{useEffect, useState} from "react";
 
 export default function Project() {
     const {state} = useLocation();
     const project = state ? state.project : null;
 
-    console.log(project)
+    const [imagesLoaded, setImagesLoaded] = useState([]);
+    const [, setPreloadedImages] = useState([]);
+
+    useEffect(() => {
+        if (project) {
+            const preloadImages = project.images.map(imgUrl => {
+                const img = new Image();
+                img.src = imgUrl;
+                img.onload = () => handleImageLoad(imgUrl);
+                return img;
+            });
+            setPreloadedImages(preloadImages);
+        }
+    }, [project]);
+
+    const handleImageLoad = (imgUrl) => {
+        setImagesLoaded(prevState => [...prevState, imgUrl]);
+    };
+
     return (
 
         <div
-            className="col-span-1 flex flex-col items-center text-center space-y-2 pb-8 border-b-2 border-slate-400 dark:border-white">
-            <div className="grid grid-cols-1 gap-4  max-w-3xl m-8 place-items-center space-y-2 ">
-                <h1 className="text-2xl">{project.title}</h1>
+            className="m-8">
 
+            <h1 className="text-2xl m-8 mb-14 text-center">{project.title}</h1>
+
+            <div className="flex flex-wrap">
                 {project.images.map((imgUrl, index) => (
-                    <div>
-                        <img key={index} src={imgUrl} alt="Image description"/>
-                        <p>
-                            Här ska skrivas en paragraph kan du tro
-                            Här ska skrivas en paragraph kan du tro
-                            Här ska skrivas en paragraph kan du tro
-                            Här ska skrivas en paragraph kan du tro
-                            Här ska skrivas en paragraph kan du tro
-                            Här ska skrivas en paragraph kan du tro
-                            Här ska skrivas en paragraph kan du tro
-                            Här ska skrivas en paragraph kan du tro
-                            Här ska skrivas en paragraph kan du tro
-                            Här ska skrivas en paragraph kan du tro
-                            Här ska skrivas en paragraph kan du tro
-                            Här ska skrivas en paragraph kan du tro
-                            Här ska skrivas en paragraph kan du tro
-                            Här ska skrivas en paragraph kan du tro
-                        </p>
-                    </div>
+                    <React.Fragment key={index}>
+                        {imagesLoaded.includes(imgUrl) && (
+                            <div className={`flex flex-col justify-center mb-16 lg:flex-row lg:w-full ${index % 2 === 0 ? '' : 'lg:flex-row-reverse'}`}>
+                                <img
+                                    src={imgUrl}
+                                    alt="Image description"
+                                    fetchPriority="high"
+                                    decoding="async"
+                                    className="lg:w-1/2 mx-4 mb-4 rounded-lg"
+                                />
+                                <p className="text-left lg:w-1/2 mx-4">
+                                    Här ska skrivas en paragraph kan du tro Här ska skrivas en paragraph kan du tro Här
+                                    ska
+                                    skrivas en paragraph kan du tro Här ska skrivas en paragraph kan du tro Här ska
+                                    skrivas en
+                                    paragraph kan du tro Här ska skrivas en paragraph kan du tro Här ska skrivas en
+                                    paragraph
+                                    kan du tro Här ska skrivas en paragraph kan du tro Här ska skrivas en paragraph kan
+                                    du tro
+                                    Här ska skrivas en paragraph kan du tro Här ska skrivas en paragraph kan du tro Här
+                                    ska
+                                    skrivas en paragraph kan du tro Här ska skrivas en paragraph kan du tro Här ska
+                                    skrivas en
+                                    paragraph kan du tro Här ska skrivas en paragraph kan du tro
+                                </p>
+                            </div>
+                        )}
+                    </React.Fragment>
                 ))}
-
             </div>
         </div>
     );
 };
-
-
-/*
-*
-* <h1 className="h-fit">Coming soon....</h1>
-* <Link to="/portfolio" className="bg-slate-900  text-white py-2 px-4 rounded transition-transform transform hover:scale-105">Back to Portfolio</Link>
-*
-* */
