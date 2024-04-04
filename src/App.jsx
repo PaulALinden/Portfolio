@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {HashRouter, Outlet, Route, Routes} from "react-router-dom";
+import {HashRouter, Route, Routes} from "react-router-dom";
 
 import './index.css';
 import {AnimatePresence} from "framer-motion";
@@ -21,18 +21,19 @@ export default function App() {
     return (
         <div
             className="bg-slate-200 dark:bg-gray-700 dark:text-white overflow-auto h-screen w-screen min-w-fit font-serif">
-            <AnimatePresence>
-                <HashRouter basename="/portfoliopage">
-                    <Header/>
-                    <Routes>
-                        <Route path="/" element={<Homepage language={language} handleLanguageChange={handleLanguageChange}/>} />
-                        <Route path="/portfolio" element={<PortfolioPage language={language}/>} />
-                        <Route path="/portfolio/:projectId" element={<Project language={language}/>} />
-                        <Route path="/contact" element={<ContactPage language={language}/>} />
-                        <Route path="*" element={<NoPage language={language}/>} />
-                    </Routes>
-                </HashRouter>
-            </AnimatePresence>
+                <AnimatePresence>
+                    <HashRouter>
+                        <Header/>
+                        <Routes>
+                            <Route path="/" element={<Homepage language={language}
+                                                               handleLanguageChange={handleLanguageChange}/>}/>
+                            <Route path="/portfolio" element={<PortfolioPage language={language}/>}/>
+                            <Route path="/portfolio/:projectId" element={<Project language={language}/>}/>
+                            <Route path="/contact" element={<ContactPage language={language}/>}/>
+                            <Route path="*" element={<NoPage language={language}/>}/>
+                        </Routes>
+                    </HashRouter>
+                </AnimatePresence>
         </div>
 
     );
