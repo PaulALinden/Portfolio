@@ -19,7 +19,7 @@ export default function ProjectList({ language }) {
                 for (let j = 0; j < images.length; j++) {
                     await new Promise((resolve, reject) => {
                         const img = new Image();
-                        img.src = images[j];
+                        img.src = images[j].toString();
                         img.onload = resolve;
                         img.onerror = reject;
                     });
@@ -51,6 +51,7 @@ export default function ProjectList({ language }) {
                                 images={images}
                                 title={projectData.title}
                                 description={projectData.description[language]}
+                                language={language}
                             />
                         )}
                     </React.Fragment>

@@ -1,12 +1,13 @@
 import { Link } from 'react-router-dom';
 
-export default function ProjectCard({ id, title, description, images }) {
+export default function ProjectCard({ id, title, description, images, language }) {
 
     let project = {
         id,
         title,
         description,
-        images
+        images,
+        language
     }
 
     return (

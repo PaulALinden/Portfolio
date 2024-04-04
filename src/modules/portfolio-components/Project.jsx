@@ -2,6 +2,12 @@ import {useLocation} from 'react-router-dom';
 import React,{useEffect, useState} from "react";
 
 export default function Project() {
+
+    const paragraphPlaceholder = {
+        swe: 'Förbereder information om projektet. Kom tillbaka snart för att få veta mer!',
+        eng: 'Preparing information about the project. Come back soon to learn more!'
+    }
+
     const {state} = useLocation();
     const project = state ? state.project : null;
 
@@ -43,20 +49,8 @@ export default function Project() {
                                     decoding="async"
                                     className="lg:w-1/2 mx-4 mb-4 rounded-lg"
                                 />
-                                <p className="text-left lg:w-1/2 mx-4">
-                                    Här ska skrivas en paragraph kan du tro Här ska skrivas en paragraph kan du tro Här
-                                    ska
-                                    skrivas en paragraph kan du tro Här ska skrivas en paragraph kan du tro Här ska
-                                    skrivas en
-                                    paragraph kan du tro Här ska skrivas en paragraph kan du tro Här ska skrivas en
-                                    paragraph
-                                    kan du tro Här ska skrivas en paragraph kan du tro Här ska skrivas en paragraph kan
-                                    du tro
-                                    Här ska skrivas en paragraph kan du tro Här ska skrivas en paragraph kan du tro Här
-                                    ska
-                                    skrivas en paragraph kan du tro Här ska skrivas en paragraph kan du tro Här ska
-                                    skrivas en
-                                    paragraph kan du tro Här ska skrivas en paragraph kan du tro
+                                <p className="text-center lg:w-1/2 mx-4 self-center">
+                                    {project.language === 'swe' ? (paragraphPlaceholder.swe) : project.language === 'eng' ? (paragraphPlaceholder.eng):null}
                                 </p>
                             </div>
                         )}
