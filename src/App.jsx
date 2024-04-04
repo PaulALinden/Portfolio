@@ -23,7 +23,7 @@ export default function App() {
             className="bg-slate-200 dark:bg-gray-700 dark:text-white overflow-auto h-screen w-screen min-w-fit font-serif">
             <AnimatePresence>
 
-                <BrowserRouter>
+                <BrowserRouter basename={"portfoliopage"}>
                     <Routes>
                         <Route
                             element={
@@ -33,7 +33,7 @@ export default function App() {
                                 </>
                             }>
 
-                            <Route path={""} element={<Homepage language={language} handleLanguageChange={handleLanguageChange}/>}/>
+                            <Route path={"portfoliopage"} element={<Homepage language={language} handleLanguageChange={handleLanguageChange}/>}/>
 
                             <Route path="portfolio" element={<PortfolioPage language={language}/>}/>
 
