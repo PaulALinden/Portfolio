@@ -22,10 +22,10 @@ export default function App() {
         <div
             className="bg-slate-200 dark:bg-gray-700 dark:text-white overflow-auto h-screen w-screen min-w-fit font-serif">
                 <AnimatePresence>
-                    <HashRouter>
+                    <HashRouter basename="/">
                         <Header/>
                         <Routes>
-                            <Route path="/" element={<Homepage language={language}
+                            <Route exact  path="/" element={<Homepage language={language}
                                                                handleLanguageChange={handleLanguageChange}/>}/>
                             <Route path="/portfolio" element={<PortfolioPage language={language}/>}/>
                             <Route path="/portfolio/:projectId" element={<Project language={language}/>}/>
