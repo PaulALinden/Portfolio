@@ -26,7 +26,7 @@ export default function App() {
                 <BrowserRouter basename="/portfoliopage">
                     <Routes>
                         <Route
-                            path="/"
+                            path="/portfoliopage"
                             element={
                                 <>
                                     <Header/>
