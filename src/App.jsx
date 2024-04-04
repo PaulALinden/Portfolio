@@ -23,10 +23,9 @@ export default function App() {
             className="bg-slate-200 dark:bg-gray-700 dark:text-white overflow-auto h-screen w-screen min-w-fit font-serif">
             <AnimatePresence>
 
-                <BrowserRouter basename="/">
+                <BrowserRouter>
                     <Routes>
                         <Route
-                            path="/"
                             element={
                                 <>
                                     <Header/>
@@ -34,7 +33,7 @@ export default function App() {
                                 </>
                             }>
 
-                            <Route index element={<Homepage language={language} handleLanguageChange={handleLanguageChange}/>}/>
+                            <Route path={""} element={<Homepage language={language} handleLanguageChange={handleLanguageChange}/>}/>
 
                             <Route path="portfolio" element={<PortfolioPage language={language}/>}/>
 
@@ -42,7 +41,7 @@ export default function App() {
 
                             <Route path="contact" element={<ContactPage language={language}/>}/>
 
-                            <Route path="*" element={<NoPage language={language}/>}/>
+                            { /*<Route path="*" element={<NoPage language={language}/>}/> */ }
 
 
                         </Route>
