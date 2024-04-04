@@ -1,7 +1,7 @@
 import {useLocation} from 'react-router-dom';
 import React,{useEffect, useState} from "react";
 
-export default function Project() {
+export default function Project({language}) {
 
     const paragraphPlaceholder = {
         swe: 'Förbereder information om projektet. Kom tillbaka snart för att få veta mer!',
@@ -50,7 +50,7 @@ export default function Project() {
                                     className="lg:w-1/2 mx-4 mb-4 rounded-lg"
                                 />
                                 <p className="text-center lg:w-1/2 mx-4 self-center">
-                                    {project.language === 'swe' ? (paragraphPlaceholder.swe) : project.language === 'eng' ? (paragraphPlaceholder.eng):null}
+                                    {language === 'swe' ? (paragraphPlaceholder.swe) : language === 'eng' ? (paragraphPlaceholder.eng):null}
                                 </p>
                             </div>
                         )}

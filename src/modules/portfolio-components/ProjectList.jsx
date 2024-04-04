@@ -51,7 +51,6 @@ export default function ProjectList({ language }) {
                                 images={images}
                                 title={projectData.title}
                                 description={projectData.description[language]}
-                                language={language}
                             />
                         )}
                     </React.Fragment>
