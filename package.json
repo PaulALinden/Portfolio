@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "homepage": "https://paulalinden.github.io/portfoliopage/#",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "",
   "scripts": {
     "dev": "parcel ./src/index.html",
@@ -12,11 +12,26 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "assert": "^2.1.0",
+    "browserify-zlib": "^0.2.0",
     "buffer": "^6.0.3",
-    "del-cli": "^5.0.0",
-    "parcel": "^2.9.3",
+    "constants-browserify": "^1.0.0",
+    "crypto-browserify": "^3.12.0",
+    "del-cli": "^5.1.0",
+    "domain-browser": "^3.5.0",
+    "events": "^3.3.0",
+    "https-browserify": "^1.0.0",
+    "os-browserify": "^0.3.0",
+    "parcel": "^2.12.0",
+    "path-browserify": "^1.0.1",
     "process": "^0.11.10",
-    "tailwindcss": "^3.3.3"
+    "querystring-es3": "^0.2.1",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "tailwindcss": "^3.3.3",
+    "tty-browserify": "^0.0.1",
+    "url": "^0.11.3",
+    "util": "^0.12.5"
   },
   "dependencies": {
     "autoprefixer": "^10.4.14",
@@ -30,7 +45,12 @@
     "react-image": "^4.1.0",
     "react-pdf": "^7.3.3",
     "react-router-dom": "^6.15.0",
-    "react-spinners": "^0.13.8",
-    "yarn": "^1.22.22"
-  }
+    "react-spinners": "^0.13.8"
+  },
+  "browserslist": [
+    ">0.5%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }

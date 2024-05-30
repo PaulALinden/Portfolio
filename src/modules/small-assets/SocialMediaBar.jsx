@@ -1,5 +1,5 @@
 import React from 'react';
-import websiteLinks from '../../data/websiteLinks.json'
+import websiteLinks from '../../data/websiteLinks.js'
 import { SiLinkedin, SiGithub } from 'react-icons/si';
 
 export default function Footer() {

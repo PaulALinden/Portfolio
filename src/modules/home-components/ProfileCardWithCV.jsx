@@ -1,7 +1,6 @@
 import {SiBookstack} from 'react-icons/si';
-import profilImage from '../../media/profil.png';
-import websiteLinks from '../../data/websiteLinks.json'
-
+import websiteLinks from '../../data/websiteLinks.js'
+import profileImg from '../../media/profile.png';
 export default function ProfileCardWithCV({language}) {
     const selectedContent = websiteLinks.cv[language];
 
@@ -11,9 +10,8 @@ export default function ProfileCardWithCV({language}) {
             className="text-white bg-gray-700 w-60 max-w-fit order-1 md:w-80 lg:w-96 relative rounded-t-full lg:order-2">
 
             <img
-                src={profilImage}
+                src={profileImg}
                 alt="Profile Picture"
-                fetchPriority={"high"}
                 decoding={"sync"}
             />
 

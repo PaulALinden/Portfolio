@@ -1,9 +1,9 @@
 import React from 'react';
-import profilContent from '../../data/profil-content.json'
+import profileContent from '../../data/profil-content.js'
 
 export default function AboutMeArticle({ language }) {
     
-    const selectedContent = profilContent[language]; 
+    const selectedContent = profileContent[language]; 
 
     return (
         <article className="space-y-5 basis-1/2 order-2 lg:order-1">
