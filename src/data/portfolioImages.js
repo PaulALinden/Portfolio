@@ -46,7 +46,7 @@ import layout from '../media/search-js/layout.gif';
 import advSearch from '../media/search-js/adv-search.gif';
 //Image urls for swifty project
 import swiftyCart from '../media/swifty/cart.png';
-import swiftyDeliver from '../media/swifty/cart.png';
+import swiftyDeliver from '../media/swifty/deliver.png';
 import swiftyHome from '../media/swifty/home.png';
 import swiftyLoading from '../media/swifty/loading.png';
 import loginSwifty from '../media/swifty/login.png';

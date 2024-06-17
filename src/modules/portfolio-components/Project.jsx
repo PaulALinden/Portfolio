@@ -19,6 +19,7 @@ export default function Project({language}) {
         const descriptionArr = [];
         if (project) {
             const preloadImages = project.images.map(imgData => {
+                console.log(imgData[0])
                 urlArr.push(imgData[0])
                 descriptionArr.push(imgData[1]);
             });
@@ -40,10 +41,8 @@ export default function Project({language}) {
                     <React.Fragment key={index}>
                             <div className={`flex flex-col justify-center mb-16 lg:flex-row lg:w-full ${index % 2 === 0 ? '' : 'lg:flex-row-reverse'}`}>
                                 <img
-                                    src={imgUrl}
-                                    alt="Image description"
-                                    fetchPriority="high"
-                                    decoding="async"
+                                    src={imageUrls[index]}
+                                    alt="Image"
                                     className="lg:w-1/2 mx-4 mb-4 rounded-lg"
                                 />
                                 <p className="text-center lg:w-1/2 mx-4 self-center">
