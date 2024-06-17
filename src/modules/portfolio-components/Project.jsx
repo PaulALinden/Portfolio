@@ -11,27 +11,25 @@ export default function Project({language}) {
     const {state} = useLocation();
     const project = state ? state.project : null;
 
-    const [imagesLoaded, setImagesLoaded] = useState([]);
-    const [, setPreloadedImages] = useState([]);
+    const [imageUrls, setImageUrls] = useState([]);
+    const [imgDescriptions, setImgDescriptions] = useState([]);
 
     useEffect(() => {
+        const urlArr = []
+        const descriptionArr = [];
         if (project) {
-            const preloadImages = project.images.map(imgUrl => {
-                const img = new Image();
-                img.src = imgUrl;
-                img.onload = () => handleImageLoad(imgUrl);
-                return img;
+            const preloadImages = project.images.map(imgData => {
+                urlArr.push(imgData[0])
+                descriptionArr.push(imgData[1]);
             });
-            setPreloadedImages(preloadImages);
+
+            setImgDescriptions(descriptionArr);
+            setImageUrls(urlArr);
         }
     }, [project]);
 
-    const handleImageLoad = (imgUrl) => {
-        setImagesLoaded(prevState => [...prevState, imgUrl]);
-    };
 
     return (
-
         <div
             className="m-8">
 
@@ -40,7 +38,6 @@ export default function Project({language}) {
             <div className="flex flex-wrap">
                 {project.images.map((imgUrl, index) => (
                     <React.Fragment key={index}>
-                        {imagesLoaded.includes(imgUrl) && (
                             <div className={`flex flex-col justify-center mb-16 lg:flex-row lg:w-full ${index % 2 === 0 ? '' : 'lg:flex-row-reverse'}`}>
                                 <img
                                     src={imgUrl}
@@ -50,10 +47,13 @@ export default function Project({language}) {
                                     className="lg:w-1/2 mx-4 mb-4 rounded-lg"
                                 />
                                 <p className="text-center lg:w-1/2 mx-4 self-center">
-                                    {language === 'swe' ? (paragraphPlaceholder.swe) : language === 'eng' ? (paragraphPlaceholder.eng):null}
+                                    {imgDescriptions[index] && imgDescriptions[index][language] ? (
+                                        imgDescriptions[index][language]
+                                    ) : (
+                                        language === 'swe' ? paragraphPlaceholder.swe : paragraphPlaceholder.eng
+                                    )}
                                 </p>
                             </div>
-                        )}
                     </React.Fragment>
                 ))}
             </div>

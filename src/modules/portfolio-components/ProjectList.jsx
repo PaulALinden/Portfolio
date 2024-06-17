@@ -21,9 +21,11 @@ export default function ProjectList({language}) {
 
                             <ProjectCard
                                 id={key}
-                                images={projectData.images}
+                                projectData={projectData}
+                                language={language}
+                                /*images={projectData.images}
                                 title={projectData.title}
-                                description={projectData.description[language]}
+                                description={projectData.description[language]}*/
                             />
 
                         </React.Fragment>

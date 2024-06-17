@@ -53,9 +53,20 @@ import loginSwifty from '../media/swifty/login.png';
 import swiftyProfile from '../media/swifty/profile.png';
 import swiftyRegister from '../media/swifty/register.png';
 import swiftySpecs from '../media/swifty/specs.png';
+import {swiftyDescriptions} from "./imageDescriptions";
 
 
-const swiftyImages = [loginSwifty, swiftyRegister, swiftyLoading, swiftyHome, swiftyProfile, swiftySpecs, swiftyCart, swiftyDeliver]
+const swiftyImages = [
+    [loginSwifty, swiftyDescriptions.login],
+    [swiftyRegister, swiftyDescriptions.signup],
+    [swiftyLoading, swiftyDescriptions.loading],
+    [swiftyHome, swiftyDescriptions.home],
+    [swiftyProfile, swiftyDescriptions.profil],
+    [swiftySpecs, swiftyDescriptions.shop],
+    [swiftyCart, swiftyDescriptions.cart],
+    [swiftyDeliver, swiftyDescriptions.deliver]
+];
+
 const producerConsumerImages = [producerConsumer, startProd, beginProd, addProd, bufferMiddle, bufferFull, removeProducer, saveState, loadState];
 const minMaxImages = [minMax, startGame, firstMove, defend, endGame];
 const stateMachineImages = [stateMachine, startState, selectMode, displayDate, changeDate, displayNew, cantChange];

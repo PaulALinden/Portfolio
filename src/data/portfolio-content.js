@@ -9,7 +9,7 @@ const portfolioData= {
                 swe: "Swifty är en applikation som ska effektivisera detaljhandel genom att samla flera inköp från kunder och leverera dem samma dag. Projektet är fortfarande under utveckling. Teknologier som används är Android, Spring Boot och Firebase.",
                 eng: "Swifty is an application designed to streamline retail by gathering multiple customer purchases and delivering them on the same day. This project is still under development. Technologies being used include Android, Spring Boot, and Firebase."
             },
-            images: imageArr.swiftyImages
+            images: imageArr.swiftyImages,
         },
         prodcons: {
             title: "Producer Consumer",
