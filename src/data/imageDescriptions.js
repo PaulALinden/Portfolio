@@ -2,7 +2,7 @@
 export const swiftyDescriptions = {
     login: {//LOGIN
         eng:"This is the first fragment of the app that handels the user login. It Receives username and password, validates them against a server, and securely stores user data upon successful login. It utilizes background threads to prevent the app from freezing during network requests.",
-        swe:"Det är första fargmentet i appen där användarinloggning hanteras. Det tar emot användarnamn och lösenord, validerar dem mot en server och lagrar användaruppgifter säkert vid lyckad inloggning. Det Använder bakgrundstrådar för att undvika att appen låser sig under nätverksförfrågningar."
+        swe:"Det är första fragmentet i appen där användarinloggning hanteras. Det tar emot användarnamn och lösenord, validerar dem mot en server och lagrar användaruppgifter säkert vid lyckad inloggning. Det Använder bakgrundstrådar för att undvika att appen låser sig under nätverksförfrågningar."
     },
     signup:{//SIGNUP
         eng:"This fragment handles user registration within the app. It provides a form for users to input their details (username, email, name, birthdate, password) and validates this input before sending it to a server to create a new user account. ",
