@@ -19,7 +19,6 @@ export default function Project({language}) {
         const descriptionArr = [];
         if (project) {
             const preloadImages = project.images.map(imgData => {
-                console.log(imgData[0])
                 urlArr.push(imgData[0])
                 descriptionArr.push(imgData[1]);
             });

@@ -1,6 +1,7 @@
 import {Link} from 'react-router-dom';
 
 export default function ProjectCard({id,projectData, language}) {
+    const imageUrl = projectData.images[0]?.length === 2 ? projectData.images[0][0] : projectData.images[0];
 
     return (
 
@@ -11,7 +12,7 @@ export default function ProjectCard({id,projectData, language}) {
 
             <Link state={{project: projectData}} to={{pathname: `/portfolio/${id}/`}}>
                 <img
-                    src={projectData.images[0]}
+                    src={imageUrl}
                     alt="image"
                     decoding={"sync"}
                     className="my-4 rounded-lg hover:scale-105 transition-transform duration-300"
