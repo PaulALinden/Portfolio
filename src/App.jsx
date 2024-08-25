@@ -23,10 +23,9 @@ export default function App() {
             className="bg-slate-200 dark:bg-gray-700 dark:text-white overflow-auto h-screen w-screen min-w-fit font-serif">
             <AnimatePresence>
                 <HashRouter basename="/">
-                    <Header/>
+                    <Header handleLanguageChange={handleLanguageChange}/>
                     <Routes>
-                        <Route exact path="/" element={<Homepage language={language}
-                                                                 handleLanguageChange={handleLanguageChange}/>}/>
+                        <Route exact path="/" element={<Homepage language={language}/>}/>
                         <Route path="/portfolio" element={<PortfolioPage language={language}/>}/>
                         <Route path="/portfolio/:projectId" element={<Project language={language}/>}/>
                         <Route path="/contact" element={<ContactPage language={language}/>}/>

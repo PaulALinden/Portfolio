@@ -1,18 +1,28 @@
-import React from 'react';
-import profileContent from '../../data/profil-content.js'
+import React, { useState, useEffect } from 'react';
+import profileContent from '../../data/profil-content.js';
+import TechStackCard from './TechStackCard';
 
 export default function AboutMeArticle({ language }) {
-    
-    const selectedContent = profileContent[language]; 
+    const [paragraphs, setParagraphs] = useState([]);
+    const selectedContent = Object.values(profileContent[language]);
+
+    const articleStyle = 'space-y-5 basis-1/2 order-2 lg:order-1';
+    const headingStyle = 'text-5xl m-3';
+
+    useEffect(() => {
+        const extractedParagraphs = selectedContent.slice(2);
+        setParagraphs(extractedParagraphs);
+    }, []);
 
     return (
-        <article className="space-y-5 basis-1/2 order-2 lg:order-1">
-            <h1 className="text-5xl">{selectedContent.welcomephrase}</h1>
-            <h2 className="text-2xl">{selectedContent.title}</h2>
-            <p>{selectedContent.firstPart}</p>
-            <p>{selectedContent.secondPart}</p>
-            <p>{selectedContent.thirdPart}</p>
-            <p>{selectedContent.fourthPart}</p>
+        <article className={articleStyle}>
+            <h1 className={headingStyle}>{selectedContent[0]}</h1>
+            <TechStackCard />
+            {paragraphs.length > 0 &&
+                paragraphs.map((paragraph, index) => (
+                    <p key={index}>{paragraph}</p>
+                ))
+            }
         </article>
     );
 }

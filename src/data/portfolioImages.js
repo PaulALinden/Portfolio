@@ -55,6 +55,10 @@ import swiftyRegister from '../media/swifty/register.png';
 import swiftySpecs from '../media/swifty/specs.png';
 import {swiftyDescriptions} from "./imageDescriptions";
 
+const paragraphPlaceholder = {
+    swe: 'Förbereder information om projektet. Kom tillbaka snart för att få veta mer!',
+    eng: 'Preparing information about the project. Come back soon to learn more!'
+};
 
 const swiftyImages = [
     [loginSwifty, swiftyDescriptions.login],
@@ -67,13 +71,66 @@ const swiftyImages = [
     [swiftyDeliver, swiftyDescriptions.deliver]
 ];
 
-const producerConsumerImages = [producerConsumer, startProd, beginProd, addProd, bufferMiddle, bufferFull, removeProducer, saveState, loadState];
-const minMaxImages = [minMax, startGame, firstMove, defend, endGame];
-const stateMachineImages = [stateMachine, startState, selectMode, displayDate, changeDate, displayNew, cantChange];
-const swoshImages = [main, login, transfer, history, table];
-const reactShopImages = [reactShop, sortingFilter, stockUpdate, checkOut];
-const restServiceImages = [restService, get, post, put, del];
-const searchJs = [start, search, layout, advSearch];
+const producerConsumerImages = [
+    [producerConsumer, paragraphPlaceholder],
+    [startProd, paragraphPlaceholder],
+    [beginProd, paragraphPlaceholder],
+    [addProd, paragraphPlaceholder],
+    [bufferMiddle, paragraphPlaceholder],
+    [bufferFull, paragraphPlaceholder],
+    [removeProducer, paragraphPlaceholder],
+    [saveState, paragraphPlaceholder],
+    [loadState, paragraphPlaceholder]
+];
+
+const minMaxImages = [
+    [minMax, paragraphPlaceholder],
+    [startGame, paragraphPlaceholder],
+    [firstMove, paragraphPlaceholder],
+    [defend, paragraphPlaceholder],
+    [endGame, paragraphPlaceholder]
+];
+
+const stateMachineImages = [
+    [stateMachine, paragraphPlaceholder],
+    [startState, paragraphPlaceholder],
+    [selectMode, paragraphPlaceholder],
+    [displayDate, paragraphPlaceholder],
+    [changeDate, paragraphPlaceholder],
+    [displayNew, paragraphPlaceholder],
+    [cantChange, paragraphPlaceholder]
+];
+
+const swoshImages = [
+    [main, paragraphPlaceholder],
+    [login, paragraphPlaceholder],
+    [transfer, paragraphPlaceholder],
+    [history, paragraphPlaceholder],
+    [table, paragraphPlaceholder]
+];
+
+const reactShopImages = [
+    [reactShop, paragraphPlaceholder],
+    [sortingFilter, paragraphPlaceholder],
+    [stockUpdate, paragraphPlaceholder],
+    [checkOut, paragraphPlaceholder]
+];
+
+const restServiceImages = [
+    [restService, paragraphPlaceholder],
+    [get, paragraphPlaceholder],
+    [post, paragraphPlaceholder],
+    [put, paragraphPlaceholder],
+    [del, paragraphPlaceholder]
+];
+
+const searchJs = [
+    [start, paragraphPlaceholder],
+    [search, paragraphPlaceholder],
+    [layout, paragraphPlaceholder],
+    [advSearch, paragraphPlaceholder]
+];
+
 
 export const imageArr = {
     swiftyImages,
