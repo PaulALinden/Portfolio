@@ -6,7 +6,7 @@ import {motion} from "framer-motion";
 export default function Main({language}) {
 
     const mainClassName =
-        "p-4 w-11/12 flex flex-col lg:flex-row space-y-6 space-x-6 ";
+        "p-4 w-11/12 flex flex-col lg:flex-row space-y-6 space-x-6 w-svw";
 
     return (
         <motion.main

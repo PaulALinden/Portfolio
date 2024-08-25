@@ -20,7 +20,7 @@ export default function App() {
 
     return (
         <div
-            className="bg-slate-200 dark:bg-gray-700 dark:text-white overflow-auto h-screen w-screen min-w-fit font-serif">
+            className="bg-slate-200 dark:bg-gray-700 dark:text-white overflow-auto h-full w-full min-w-fit font-serif">
             <AnimatePresence>
                 <HashRouter basename="/">
                     <Header handleLanguageChange={handleLanguageChange}/>

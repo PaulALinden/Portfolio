@@ -5,9 +5,9 @@ import { motion } from "framer-motion";
 const ContactPage = ({language}) => {
   // Class name variables
   const mainClassName =
-      "flex justify-center items-center flex-col h-96 space-y-8";
+      "flex items-center flex-col h-96 space-y-8 h-svh";
   const sectionClassName =
-      "border-2 p-4 text-center border-slate-400 dark:border-white space-y-2";
+      "border-2 p-4 text-center border-slate-400 dark:border-white space-y-2 mt-20";
   const headingClassName =
       "text-3xl";
   const paragraphClassName =
