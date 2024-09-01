@@ -1,12 +1,30 @@
-import React, { useState } from "react";
+import React, {useEffect, useState } from "react";
 import LanguageSelector from "../home-components/LanguageSelector";
+import {Link, useLocation} from "react-router-dom";
 
 const Menu = ({ handleLanguageChange }) => {
+    const location = useLocation();
     const [isOpen, setIsOpen] = useState(false);
+
+    const isActive = (path)=>{
+        return location.pathname === path ? "underline" : "";
+    }
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
+
+    useEffect(() => {
+        const handleHashChange = () => {
+            setIsOpen(false);
+        };
+
+        window.addEventListener('hashchange', handleHashChange);
+
+        return () => {
+            window.removeEventListener('hashchange', handleHashChange);
+        };
+    }, []);
 
     // Class name variables
     const containerClassName =
@@ -21,7 +39,7 @@ const Menu = ({ handleLanguageChange }) => {
         = `absolute mt-2 -right-2 w-32 bg-gray-700 border border-gray-200 shadow-lg 
         flex flex-col items-start p-4 space-y-2 transform transition-transform duration-300`;
     const linkClassName =
-        "text-white hover:text-blue-500";
+        "p-1 text-white hover:shadow-[0_0_10px_#3b82f6] hover:bg-blue-500 hover:bg-opacity-50 hover:rounded-lg";
 
     return (
         <div className={containerClassName}>
@@ -41,19 +59,19 @@ const Menu = ({ handleLanguageChange }) => {
             {/* Menu Items */}
             <ul className={`${menuListClassName} ${isOpen ? "scale-100" : "scale-0"}`}>
                 <li>
-                    <a href="#" className={linkClassName}>
+                    <Link to="" className={`${linkClassName} ${isActive("/")}`}>
                         Home
-                    </a>
+                    </Link>
                 </li>
                 <li>
-                    <a href="#portfolio" className={linkClassName}>
+                    <Link to="portfolio" className={`${linkClassName} ${isActive("/portfolio")}`}>
                         Portfolio
-                    </a>
+                    </Link>
                 </li>
                 <li>
-                    <a href="#contact" className={linkClassName}>
+                    <Link to="contact" className={`${linkClassName} ${isActive("/contact")}`}>
                         Contact
-                    </a>
+                    </Link>
                 </li>
                 <LanguageSelector handleLanguageChange={handleLanguageChange} />
             </ul>

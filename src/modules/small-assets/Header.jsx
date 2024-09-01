@@ -8,11 +8,6 @@ export default function Header({ handleLanguageChange }) {
     const location = useLocation();
     const [isVisible, setIsVisible] = useState(true);
 
-    // Function to determine if a link is active
-    const isActive = (path) => {
-        return location.pathname === path;
-    };
-
     // Class name variables
     const containerClassName =
         "sticky top-0 z-10 bg-gradient-to-r from-gray-800 to-gray-500 " +
@@ -25,8 +20,8 @@ export default function Header({ handleLanguageChange }) {
         "p-4 space-x-4 h-12 flex";
     const linkBaseClassName =
         "space-x-1 flex justify-center items-center text-sm w-24 h-8 hover:bg-gray-900 " +
-        "focus:bg-gray-900 rounded-md bg-gray-700 text-white font-semibold shadow-md " +
-        "transition duration-300 focus:outline-none focus:ring focus:ring-gray-900";
+        "rounded-md bg-gray-700 text-white font-semibold shadow-md " +
+        "transition duration-300";
     const activeLinkStyle =
         "text-white bg-gray-900";
     const inactiveLinkStyle =
@@ -62,7 +57,7 @@ export default function Header({ handleLanguageChange }) {
                     <>
                         <Link
                             to="/"
-                            className={`${linkBaseClassName} ${isActive("/") ? activeLinkStyle : inactiveLinkStyle}`}
+                            className={`${linkBaseClassName} ${location.pathname === "/" ? activeLinkStyle : inactiveLinkStyle}`}
                         >
                             <p>Home</p>
                             <BsHouseDoorFill />
@@ -70,7 +65,7 @@ export default function Header({ handleLanguageChange }) {
 
                         <Link
                             to="/portfolio"
-                            className={`${linkBaseClassName} ${isActive("/portfolio") ? activeLinkStyle : inactiveLinkStyle}`}
+                            className={`${linkBaseClassName} ${location.pathname === "/portfolio" ? activeLinkStyle : inactiveLinkStyle}`}
                         >
                             <p>Portfolio</p>
                             <BsStack />
@@ -78,7 +73,7 @@ export default function Header({ handleLanguageChange }) {
 
                         <Link
                             to="/contact"
-                            className={`${linkBaseClassName} ${isActive("/contact") ? activeLinkStyle : inactiveLinkStyle}`}
+                            className={`${linkBaseClassName} ${location.pathname === "/contact" ? activeLinkStyle : inactiveLinkStyle}`}
                         >
                             <p>Contact</p>
                             <BsFillEnvelopeAtFill />
