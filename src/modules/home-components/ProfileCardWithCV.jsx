@@ -1,6 +1,6 @@
 import {SiBookstack} from 'react-icons/si';
 import websiteLinks from '../../data/websiteLinks.js'
-import profileImg from '../../media/profile.png';
+import profileImg from '../../media/profile.webp';
 export default function ProfileCardWithCV({language}) {
     const selectedContent = websiteLinks.cv[language];
 

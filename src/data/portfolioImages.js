@@ -1,58 +1,58 @@
 //Image urls for producer consumer project
-import producerConsumer from '../media/producerconsumer/producerconsumer.png'
-import startProd from '../media/producerconsumer/start.png'
-import beginProd from '../media/producerconsumer/begin.png'
-import addProd from '../media/producerconsumer/addProducers.png'
-import bufferMiddle from '../media/producerconsumer/bufferMid.png'
-import bufferFull from '../media/producerconsumer/bufferFull.png'
-import removeProducer from '../media/producerconsumer/removeProducers.png'
-import saveState from '../media/producerconsumer/saveState.png'
-import loadState from '../media/producerconsumer/loadState.png'
+import producerConsumer from '../media/producerconsumer/producerconsumer.webp'
+import startProd from '../media/producerconsumer/start.webp'
+import beginProd from '../media/producerconsumer/begin.webp'
+import addProd from '../media/producerconsumer/addProducers.webp'
+import bufferMiddle from '../media/producerconsumer/bufferMid.webp'
+import bufferFull from '../media/producerconsumer/bufferFull.webp'
+import removeProducer from '../media/producerconsumer/removeProducers.webp'
+import saveState from '../media/producerconsumer/saveState.webp'
+import loadState from '../media/producerconsumer/loadState.webp'
 //Image urls for min-max project
-import minMax from '../media/minmaxalg/minmax.png'
-import startGame from '../media/minmaxalg/start.png'
-import firstMove from '../media/minmaxalg/firstMove.png'
-import defend from '../media/minmaxalg/defend.png'
-import endGame from '../media/minmaxalg/end.png'
+import minMax from '../media/minmaxalg/minmax.webp'
+import startGame from '../media/minmaxalg/start.webp'
+import firstMove from '../media/minmaxalg/firstMove.webp'
+import defend from '../media/minmaxalg/defend.webp'
+import endGame from '../media/minmaxalg/end.webp'
 //Image urls for state machine project
-import stateMachine from '../media/statemachine/statemachine.png'
-import startState from '../media/statemachine/start.png'
-import selectMode from '../media/statemachine/select.png'
-import displayDate from '../media/statemachine/displayDate.png'
-import changeDate from '../media/statemachine/changeDate.png'
-import displayNew from '../media/statemachine/displayNew.png'
-import cantChange from '../media/statemachine/cantChange.png'
+import stateMachine from '../media/statemachine/statemachine.webp'
+import startState from '../media/statemachine/start.webp'
+import selectMode from '../media/statemachine/select.webp'
+import displayDate from '../media/statemachine/displayDate.webp'
+import changeDate from '../media/statemachine/changeDate.webp'
+import displayNew from '../media/statemachine/displayNew.webp'
+import cantChange from '../media/statemachine/cantChange.webp'
 //Image urls for swosh project
-import main from '../media/swosh-media/swosh.png';
+import main from '../media/swosh-media/swosh.webp';
 import login from '../media/swosh-media/login.gif';
 import transfer from '../media/swosh-media/transfer.gif';
 import history from '../media/swosh-media/history.gif';
-import table from '../media/swosh-media/table_plus.png';
+import table from '../media/swosh-media/table_plus.webp';
 //Image urls for react shop project
-import reactShop from '../media/react-shop/react-shop.png';
+import reactShop from '../media/react-shop/react-shop.webp';
 import sortingFilter from '../media/react-shop/sorting-filter.gif';
 import stockUpdate from '../media/react-shop/stock-update.gif';
 import checkOut from '../media/react-shop/checkout.gif';
 //Image urls for rest service project
-import restService from '../media/rest-service/rest-service.png';
+import restService from '../media/rest-service/rest-service.webp';
 import get from '../media/rest-service/get.gif';
 import post from '../media/rest-service/post.gif';
 import put from '../media/rest-service/put.gif';
 import del from '../media/rest-service/delete.gif'
 //Image urls for pic finder project
-import start from '../media/search-js/start.jpg';
+import start from '../media/search-js/start.webp';
 import search from '../media/search-js/search.gif';
 import layout from '../media/search-js/layout.gif';
 import advSearch from '../media/search-js/adv-search.gif';
 //Image urls for swifty project
-import swiftyCart from '../media/swifty/cart.png';
-import swiftyDeliver from '../media/swifty/deliver.png';
-import swiftyHome from '../media/swifty/home.png';
-import swiftyLoading from '../media/swifty/loading.png';
-import loginSwifty from '../media/swifty/login.png';
-import swiftyProfile from '../media/swifty/profile.png';
-import swiftyRegister from '../media/swifty/register.png';
-import swiftySpecs from '../media/swifty/specs.png';
+import swiftyCart from '../media/swifty/cart.webp';
+import swiftyDeliver from '../media/swifty/deliver.webp';
+import swiftyHome from '../media/swifty/home.webp';
+import swiftyLoading from '../media/swifty/loading.webp';
+import loginSwifty from '../media/swifty/login.webp';
+import swiftyProfile from '../media/swifty/profile.webp';
+import swiftyRegister from '../media/swifty/register.webp';
+import swiftySpecs from '../media/swifty/specs.webp';
 import {swiftyDescriptions} from "./imageDescriptions";
 
 const paragraphPlaceholder = {
