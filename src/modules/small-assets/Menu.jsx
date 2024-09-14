@@ -58,17 +58,17 @@ const Menu = ({ handleLanguageChange }) => {
 
             {/* Menu Items */}
             <ul className={`${menuListClassName} ${isOpen ? "scale-100" : "scale-0"}`}>
-                <li>
+                <li onClick={toggleMenu}>
                     <Link to="" className={`${linkClassName} ${isActive("/")}`}>
                         Home
                     </Link>
                 </li>
-                <li>
+                <li onClick={toggleMenu}>
                     <Link to="portfolio" className={`${linkClassName} ${isActive("/portfolio")}`}>
                         Portfolio
                     </Link>
                 </li>
-                <li>
+                <li onClick={toggleMenu}>
                     <Link to="contact" className={`${linkClassName} ${isActive("/contact")}`}>
                         Contact
                     </Link>
