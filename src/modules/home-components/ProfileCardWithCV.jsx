@@ -1,8 +1,6 @@
 import {SiBookstack} from 'react-icons/si';
-import websiteLinks from '../../data/websiteLinks.js'
 import profileImg from '../../media/profile.webp';
 export default function ProfileCardWithCV({language}) {
-    const selectedContent = websiteLinks.cv[language];
 
     const sectionStyle =
         "text-white bg-gray-700 w-60 max-w-fit order-1 " +
@@ -24,8 +22,7 @@ export default function ProfileCardWithCV({language}) {
             />
 
             <a
-                href={selectedContent}
-                target="_blank"
+                href={"#cv"}
                 className={anchorStyle}
             >
                 <p className="mt-6 mb-2">cv</p>

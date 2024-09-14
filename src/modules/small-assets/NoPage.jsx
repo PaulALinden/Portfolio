@@ -2,7 +2,7 @@ export default function NoPage() {
 
     // Class name variables
     const containerClassName =
-        "flex flex-col justify-center items-center text-center h-full";
+        "flex flex-col justify-center items-center text-center h-full my-[100px]";
     const paragraphClassName =
         "text-2xl";
     return (

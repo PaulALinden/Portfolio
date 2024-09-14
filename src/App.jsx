@@ -9,6 +9,7 @@ import Homepage from './modules/core-components/Homepage';
 import PortfolioPage from './modules/core-components/PortfolioPage';
 import Project from './modules/portfolio-components/Project';
 import ContactPage from './modules/core-components/ContactPage';
+import CvPage from './modules/home-components/CvDisplayer'
 import NoPage from "./modules/small-assets/NoPage";
 
 export default function App() {
@@ -29,6 +30,7 @@ export default function App() {
                         <Route path="/portfolio" element={<PortfolioPage language={language}/>}/>
                         <Route path="/portfolio/:projectId" element={<Project language={language}/>}/>
                         <Route path="/contact" element={<ContactPage language={language}/>}/>
+                        <Route path="/cv" element={<CvPage language={language}/>}/>
                         <Route path="*" element={<NoPage language={language}/>}/>
                     </Routes>
                 </HashRouter>
