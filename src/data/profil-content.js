@@ -2,18 +2,18 @@ const profileContent = {
     "swe": {
         "welcomephrase": "Välkommen",
         "title": "Utvecklare",
-        "firstPart": "Utvecklare, ivrig att inleda min professionella karriär och söker nu mitt första jobb för att expandera och tillämpa mina färdigheter inom mitt brinnande intresse. Min resa som utvecklare har varit både givande och utmanande, och jag känner mig redo att ta steget in i arbetslivet och omsätta mina kunskaper i praktiken.",
-        "secondPart": "Det som verkligen motiverar mig är den fascinerande kombinationen av problemlösning och kreativitet som kodning erbjuder. Jag trivs med att ta itu med komplexa utmaningar och skapa innovativa lösningar.",
-        "thirdPart": "Under min studietid har jag haft möjligheten att arbeta med olika tekniker, inklusive Java, JavaScript, HTML & CSS, samt SQL & NoSQL-databaser. Dessutom har jag förvärvat kompetens inom Android-utveckling. I min portfolio delar jag några av de projekt som jag har arbetat med under min studietid.",
-        "fourthPart": "Jag ser entusiastiskt fram emot att hitta mitt första jobb som utvecklare, där jag kan fortsätta att odla min passion och samtidigt bidra med min energi och arbetsmoral."
+        "firstPart": "Utvecklare med en solid grund inom både backend- och frontendutveckling, med fokus på att bygga webbaserade och mobila applikationer. Jag har erfarenhet av ett brett spektrum av teknologier, inklusive Java, Spring Boot, JavaScript, React, HTML/CSS, samt SQL- och NoSQL-databaser, vilket ger mig en stark plattform för att lösa komplexa problem och utveckla innovativa lösningar.",
+        "secondPart": "Kodning motiverar mig genom den fascinerande kombinationen av problemlösning och kreativt tänkande, och jag trivs med att tackla utmaningar som kräver både teknisk precision och kreativt nytänkande.",
+        "thirdPart": "I min portfolio visar jag upp både större och mindre projekt som speglar min tekniska mångsidighet och ambition.",
+      
     },
     "eng": {
         "welcomephrase": "Welcome",
         "title": "Developer",
-        "firstPart": "Aspiring Developer, eager to kickstart my professional career and currently seeking my first job to expand and apply my skills in my fervent interest. My journey as a developer has been both rewarding and challenging, and I feel ready to step into the professional world and put my knowledge into practice.",
-        "secondPart": "What truly motivates me is the fascinating combination of problem-solving and creativity that coding offers. I enjoy tackling complex challenges and crafting innovative solutions.",
-        "thirdPart": "During my studies, I've had the opportunity to work with various technologies, including Java, JavaScript, HTML & CSS, as well as SQL & NoSQL databases. Additionally, I have acquired expertise in Android development. In my portfolio, I showcase some of the projects I've worked on during my academic tenure.",
-        "fourthPart": "I am eagerly looking forward to finding my first job as a developer, where I can continue to nurture my passion and contribute with my enthusiasm and work ethic."
+        "firstPart": "Developer with a solid foundation in both backend and frontend development, with a focus on building web-based and mobile applications. I have experience with a wide range of technologies, including Java, Spring Boot, JavaScript, React, HTML/CSS, as well as SQL and NoSQL databases, providing me with a strong platform to solve complex problems and develop innovative solutions.",
+        "secondPart": "Coding motivates me through the fascinating combination of problem-solving and creative thinking, and I enjoy tackling challenges that require both technical precision and creative innovation.",
+        "thirdPart": "In my portfolio, I showcase both large and small projects that reflect my technical versatility and ambition.",
+
     }
 }
 
